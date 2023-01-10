@@ -1,0 +1,911 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background: url(Images/Restaurant-Instagram-Photography.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-cont {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlink {
+    flex: 1;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    bottom: 85%;
+    font-size: 1.3rem;
+}
+
+.ul {
+    transform: translateX(-10%);
+}
+
+.navlink ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.navlink ul li a {
+    text-decoration: none;
+    color: #f5f4eb;
+}
+
+.navlink ul li::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.navlink ul li:hover::after {
+    background: #fff;
+}
+
+.active::after {
+    background: #fff !important;
+}
+
+/* .menu {
+    display: block;
+    width: 25px;
+    margin: 40 auto 0;
+    cursor: pointer;
+} */
+
+.logo {
+    z-index: 2;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 20%;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 100px;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    border: 2px solid #fff;
+    color: #fbfcfb;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    /* font-family: ; */
+}
+
+.button:hover {
+    background-color: #030a77;
+    border: 2px solid #030a77;
+    color: #fff;
+}
+
+.title {
+    color: #fbfcfb;
+    margin-left: 06%;
+    margin-top: 08%;
+}
+
+.h1 {
+    font-size: 50px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.sidebar {
+    background: linear-gradient(#030a77, #000);
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.social-links img,
+.useful-links img {
+    margin: 5px auto;
+    width: 25px;
+    cursor: pointer;
+}
+
+.social-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.social-linkss:hover {
+    background: #000;
+    color: #000;
+    border-radius: 100px;
+}
+
+.useful-links {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(15%);
+}
+
+.useful-linkss:hover {
+    background: #030a77;
+    border-radius: 100px;
+}
+
+
+.animation img {
+    width: 80px;
+    animation: foods linear 7s infinite;
+    cursor: pointer;
+}
+
+.animation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: -100px;
+}
+
+@keyframes foods {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 50px;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .social-links {
+        width: auto;
+        position: unset;
+        transform: none;
+    }
+
+    .useful-links {
+        width: auto;
+        position: unset;
+    }
+
+    .menu {
+        width: 18px;
+        margin: 0;
+        cursor: pointer;
+    }
+}
+
+/* Second Page */
+
+.second-page {
+    margin-top: -10px;
+    width: 100%;
+    height: 400vh;
+    position: relative;
+}
+
+.offer {
+    color: #000000;
+    text-align: center;
+}
+
+.offer img {
+    width: 30%;
+    margin-top: -30px;
+}
+
+.h2 {
+    width: 80%;
+    color: #000000;
+    animation: texts linear 15s infinite;
+    position: relative;
+    left: 0;
+    transition: ease-in-out;
+}
+
+@keyframes texts {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 2;
+    }
+
+    50% {
+        opacity: 2;
+    }
+
+    75% {
+        opacity: 2;
+    }
+
+    100% {
+        transform: translateX(40%);
+        opacity: 0;
+    }
+
+}
+
+.food {
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    margin-top: 40px;
+    margin-left: 60px;
+    background-color: #ff9100;
+    width: 26%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.food-h3 {
+    text-align: center;
+}
+
+.food-h3,
+h3 {
+    padding-left: 45px;
+    font-size: 1.3rem;
+}
+
+#fst,
+#fth,
+#sev {
+    margin-left: 07%;
+}
+
+
+.food img {
+    height: 45%;
+    width: 70%;
+    display: inline-block;
+}
+
+.food button {
+    left: 33%;
+    top: 70%;
+    position: absolute;
+}
+
+.food h3 {
+    align-items: center;
+    position: absolute;
+    left: 01%;
+    bottom: 30%;
+    color: #f5f4eb;
+}
+
+
+.btnt {
+    padding: 10px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    color: #fbfcfb;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.btnt:hover {
+    background-color: #ff5100;
+    border: 2px solid #ff7300;
+    color: #fff;
+}
+
+.hr {
+    border: dotted grey 6px;
+    border-bottom: none;
+    width: 4%;
+    margin-left: 48%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.third-page {
+    background-image: url(Images/inner4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.h11 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fbfcfb;
+    font-size: 50px;
+    margin: 10px 10px 30px;
+    line-height: 80px;
+    position: absolute;
+    top: 40%;
+}
+
+.hrr {
+    border: solid 1px #fff;
+    border-bottom: none;
+    margin-top: 2px;
+}
+
+.bottom-cont {
+    position: relative;
+}
+
+.h3 {
+    text-decoration: none;
+    position: absolute;
+    left: 10%;
+    bottom: -70px;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.second2 {
+    position: relative;
+}
+
+.btnn {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    color: #fbfcfb;
+    font-size: 15px;
+    background-color: #212529;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    position: absolute;
+    transform: translate(10%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnn:hover {
+    background: linear-gradient(to top left, gray, #000000);
+    border: 2px solid #000000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/inner3.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+}
+
+.Topsy {
+    text-decoration: underline;
+}
+
+#msg {
+    margin-top: 10px;
+}
+
+.work-hours {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 55%;
+    top: 35%;
+}
+
+/* About Us Page */
+
+
+.about-h2 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.meet {
+    margin: 05% 0 05%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Montserrat';
+}
+
+.about-talk {
+    border-radius: 10px;
+    background: #00000027;
+    border: 2px solid #fff;
+    width: 30%;
+    height: 60%;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 35%;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.about-talk p {
+    line-height: 2;
+}
+
+
+.aa-div {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+}
+
+.aah4 {
+    margin-bottom: 10px;
+    color: #ff5100;
+}
+
+.abu {
+    margin-top: -05px;
+    margin-right: 30px;
+    float: left;
+    width: 25%;
+    border-radius: 100px;
+}
+
+.tt-div {
+    width: 50%;
+    margin: 150px auto 100px auto;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+}
+
+.tt-img {
+    width: 25%;
+    border-radius: 100px;
+    float: right;
+    margin-left: 30px;
+}
+
+
+@media (max-width: 1288px) {
+
+    .second-page {
+        width: 100%;
+        height: 300vh;
+    }
+
+    .food {
+        width: 25%;
+        height: 15%;
+        align-content: space-around;
+        margin-left: 05%;
+    }
+
+    #fst {
+        margin-left: 7%;
+    }
+
+    #fth {
+        margin-left: 7%;
+    }
+
+    #sev {
+        margin-left: 7%;
+    }
+
+    .bottom-cont {
+        position: relative;
+    }
+
+    .h3 {
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-family: 'Montserrat';
+        color: #000;
+    }
+
+    /* .social-links {
+        width: 50px;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+
+    .social-linkss:hover {
+        background: #000;
+        color: #000;
+        border-radius: 100px;
+    }
+
+    .useful-links {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(15%);
+    } */
+
+
+}
+
+@media (max-width: 1078px) {
+
+    .navlink {
+        flex: 1;
+        text-align: center;
+        position: relative;
+        left: 12%;
+        font-size: 1.3rem;
+    }
+
+    .food {
+        text-align: center;
+        width: 27%;
+        height: 15%;
+        align-content: space-around;
+        margin-left: 3%;
+        position: relative;
+    }
+
+    .amala {
+        transform: translate(-11%, 50%);
+    }
+
+    .jollof {
+        transform: translate(-5%, 50%);
+    }
+
+    .pizza,
+    .you {
+        transform: translateY(50%);
+    }
+
+    .food button {
+        position: absolute;
+        left: 30%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .ul {
+        transform: translate(-10%, -200%);
+    }
+
+    .offer {
+        color: #000;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .offer img {
+        width: 50%;
+        margin-top: -30px;
+    }
+
+    .food {
+        text-align: center;
+        width: 40%;
+        height: 20%;
+        position: relative;
+    }
+
+    #fst,
+    #fith,
+    #trd,
+    #sev {
+        margin-left: 10%;
+    }
+
+    #snd,
+    #six,
+    #eig {
+        margin-left: 60px;
+
+    }
+
+    #nine {
+        text-align: center;
+        width: 50%;
+        height: 25%;
+        padding: 0;
+        margin-left: 30%;
+    }
+
+    .you {
+        font-size: 2.0rem;
+        transform: translate(-10px, 10%);
+    }
+
+    #nine button {
+        transform: translate(30%, 20%);
+    }
+
+    .hr {
+        border: dotted #ff5100 6px;
+        border-bottom: none;
+        width: 8%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .h1,
+    small {
+        font-size: 0;
+    }
+
+    .ul {
+        transform: translateX(-10%);
+    }
+
+    .navlink {
+        text-align: left;
+        margin: 70px 0 12%;
+        font-size: 1.3rem;
+    }
+
+    .navlink ul li {
+        display: block;
+        list-style: none;
+        width: 20%;
+        padding: 30px 0;
+        position: relative;
+    }
+
+    .navlink ul li a {
+        text-decoration: none;
+        color: #f5f4eb;
+    }
+
+    .navlink ul li::after {
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .logo {
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+        margin-top: 10%;
+        width: 40%;
+        transform: translate(-10%, 0%);
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 50px;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .social-links {
+        width: auto;
+        position: unset;
+        transform: none;
+    }
+
+    .useful-links {
+        width: auto;
+        margin-right: 10px;
+        position: unset;
+    }
+
+    .menu {
+        width: 18px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .food {
+        text-align: center;
+        width: 50%;
+        height: 20%;
+        transform: translateX(30%);
+        position: relative;
+    }
+
+    .jollof {
+        transform: translate(4%, 50%);
+    }
+
+    .fried {
+        transform: translate(05%, 50%);
+    }
+
+    .ham {
+        transform: translate(06%, 50%);
+    }
+
+    .amala {
+        transform: translate(0, 50%);
+    }
+
+    .pepper {
+        transform: translate(0, 50%);
+    }
+
+    .pizza {
+        transform: translate(03%, 50%);
+    }
+
+    .you {
+        transform: translateY(50%);
+    }
+
+    .food button {
+        transform: translateX(15%);
+    }
+
+    #snd,
+    #six,
+    #eig {
+        margin-left: 10%;
+    }
+
+    #fth {
+        transform: translateX(36%);
+    }
+
+    #nine {
+        width: 50%;
+        height: 25%;
+        padding: 0;
+        margin-left: 10%;
+    }
+
+    #nine button {
+        transform: translateX(20%);
+    }
+
+    #nine h3 {
+        transform: translateX(1%);
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .second-page {
+        margin-top: -10px;
+        width: 100%;
+        height: 400vh;
+        position: relative;
+    }
+
+    .food {
+        text-align: center;
+        width: 60%;
+        height: 15%;
+        position: relative;
+        transform: translateX(34%);
+    }
+
+    #fst,
+    #fith,
+    #trd,
+    #sev,
+    #snd,
+    #six,
+    #eig {
+        margin-left: 0;
+    }
+
+    #fth {
+        margin-left: -06px;
+    }
+
+    .jollof,
+    .fried {
+        transform: translate(-05%, 30%);
+    }
+
+    .ham {
+        transform: translate(-05%, 50%);
+    }
+
+    .amala {
+        transform: translate(-08%, 50%);
+    }
+
+    .pepper {
+        transform: translate(-5%, 50%);
+    }
+
+    .pizza {
+        transform: translate(0, 50%);
+    }
+
+    .you {
+        transform: translateY(50%);
+    }
+
+    .food button {
+        transform: translate(0, 50%);
+    }
+
+    #nine {
+        display: none;
+    }
+
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat' sans-serif;
+    }
+
+    /* /////////////////////////////////////////////////////////////////////////////////////// */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* /////////////////////////////////////////////////////////////////////////////////////// */
+    .body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/background-re.png);
+        background: linear-gradient(gray gray);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .h1,
+    .lh1,
+    .hh1 {
+        font-size: 3.5rem;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        margin-right: 10px;
+    }
+
+    .hh1 {
+        font-size: 0rem;
+    }
+
+    .h111 {
+        font-size: 3.5rem;
+    }
+
+    small {
+        font-size: large;
+        font-family: helvetica;
+        text-decoration: solid;
+    }
+
+    .second2 {
+        width: auto;
+        height: 100vh;
+        margin-left: 100px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btnn {
+        margin-top: 85%;
+    }
+
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    @media (max-width: 1200px) {
+        .work-hours {
+            font-family: 'Montserrat', sans-serif;
+            position: unset;
+            margin-top: 45%;
+            margin-left: 10%;
+        }
+
+        .second2 {
+            width: auto;
+            height: 150vh;
+            margin-left: 100px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btnn {
+            margin: 100% 0;
+        }
+
+        #msg-di {
+            margin-top: 20%;
+        }
+    }
+
+    @media (max-width: 1080px) {
+
+        #msg-di {
+            margin-top: 25%;
+            transform: translateY(100%);
+        }
+
+        .btnn {
+            margin: 99% 0 0 81%;
+            transform: translateY(100%);
+            display: block;
+        }
+
+        .emaill {
+            margin-top: 0%;
+        }
+
+    }
+
+    @media (max-width: 1092px) {
+        .lh1 {
+            display: none;
+        }
+
+        .hh1 {
+            font-family: helvetica;
+            font-size: 3.5rem;
+        }
+
+        .contactt{
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="body">
+        <nav>
+            <div class="navlink">
+                <!-- <input type="checkbox" class="toggle-menu">
+                <div class="hamburger"></div> -->
+
+                <ul style="transform: translateX(-10%);">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Contact-us.html">Contact Us</a></li>
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="About-Us.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="h1">Say Hi</h1>
+        <small><strong>We are happy to get in touch with you...</strong></small>
+    </div>
+    <div class="second2">
+        <div style="width: 50%;">
+            <h1 class="lh1">Leave a message</h1>
+            <h1 class="hh1">Work Hours</h1>
+            <div class="contactt">
+                <form action="mailto:temytopsyebenezerfresh@gmail.com" style="display: flex; position: relative;">
+                    <!-- ////////////////////////////////////////////////////////////// -->
+                    <div style="padding: 0px 12px; margin-right: 10px;">
+                        <label for="name" style="color: #212529af; font-family: 'Montserrat', sans-serif;">Full
+                            Name</label> <br> <br>
+                        <input type="text" placeholder="Your Name"
+                            style="padding: 10px; margin-bottom: 10px; width: 250px; height: 50px; font-family: 'Montserrat', sans-serif; border-radius: 05px; border-color: rgba(0, 0, 0, 0.171); border: 1px solid #ced4da; color: #212529;"
+                            required>
+                    </div>
+                    <!-- ////////////////////////////////////////////////////////////// -->
+                    <div>
+                        <label for="Phone-number" style="color: #212529af; font-family: 'Montserrat', sans-serif;">Phone
+                            Number</label> <br> <br>
+                        <input type="tel" placeholder="123-456-7890"
+                            style="padding: 10px; margin-bottom: 10px; width: 250px; height: 50px; font-family: 'Montserrat', sans-serif; border-radius: 05px; border-color:rgba(0, 0, 0, 0.247); border: 1px solid #ced4da; color: #2125298e;"
+                            required>
+                    </div>
+                    <!-- ////////////////////////////////////////////////////////////// -->
+                    <div class="emaill" style="transform: translate(-100%, 120%); margin-bottom: 50%;">
+                        <label for="Email" style="color: #212529af; font-family: 'Montserrat', sans-serif;">Your
+                            Email</label><br><br>
+                        <input type="email" placeholder="Your Email"
+                            style="padding: 10px; margin-bottom: 10px; width: 520px; height: 54px; font-family: 'Montserrat', sans-serif; border-radius: 05px; border-color:rgba(0, 0, 0, 0.247); border: 1px solid #ced4da; color: #2125298e;"
+                            required>
+                    </div><br>
+                    <div id="msg-di" style="transform: translate(-200%, 65%);">
+                        <label class="label-msg" for="Message"
+                            style="color: #212529af; font-family: 'Montserrat', sans-serif;">
+                            Message</label><br><br>
+                        <textarea name="Message" id="msg" cols="69" rows="10"
+                            style="padding: 10px; margin-bottom: 10px; font-family: 'Montserrat', sans-serif; border-radius: 05px; border-color:rgba(0, 0, 0, 0.247); border: 1px solid #ced4da; color: #2125298e;"
+                            placeholder="Your Message" !important required></textarea>
+                    </div>
+                    <button class="btnn" style="width: 30%;" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="work-hours">
+                <div>
+                    <h2 style="margin-bottom: 10%; font-family: 'Montserrat', sans-serif;">Weekdays</h2>
+                    <div style="display: inline-block; margin-right: 10px; color: #212529af;">
+                        <p>Monday to Friday</p>
+                    </div>
+                    <div style="display: inline-block; margin-left: 30px; color: #212529af;">
+                        <p>10:00 AM - 08:00PM</p>
+                    </div>
+                </div>
+                <div style="margin-top: 10%;">
+                    <h2 style="margin-bottom: 10%; font-family: 'Montserrat', sans-serif;">Weekends</h2>
+                    <div style="display: inline-block; margin-right: 10px; color: #212529af;">
+                        <p>Saurday and Sunday</p>
+                    </div>
+                    <div style="display: inline-block; margin-left: 30px; color: #212529af;">
+                        <p>11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <<a href="index.html">Back home</a>
+        <div class="bottom-cont">
+            <p class="h3" style="color: #212529;">© Temy Topsy 2023 |</p>
+        </div>
+</body>
+
+</html>
