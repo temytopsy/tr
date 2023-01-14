@@ -9,6 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* This was the first page and I added the background image with the width of 100% and height of 100vh and also added a property of bacground-size to cover every part, the position to relative and the position to center aligned*/
+
 .body {
     width: 100%;
     height: 100vh;
@@ -18,6 +20,8 @@ html {
     position: relative;
     overflow: hidden;
 }
+
+/* The top container which has my logo and the body of order now!, set the display to flex, align the items to the center and justify the content to space-between and gave it some margin. */
 
 .top-cont {
     width: 85%;
@@ -75,12 +79,6 @@ html {
     background: #fff !important;
 }
 
-/* .menu {
-    display: block;
-    width: 25px;
-    margin: 40 auto 0;
-    cursor: pointer;
-} */
 
 .logo {
     z-index: 2;
@@ -200,7 +198,7 @@ html {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .h1 {
         font-size: 30px;
         line-height: 50px;
@@ -846,11 +844,45 @@ h3 {
 
 @media (max-width:500px) {
 
+    .animation img {
+        width: 80px;
+        animation: foods linear 10s infinite;
+        cursor: pointer;
+    }
+
+    @keyframes foods {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-85vh);
+            opacity: 0;
+        }
+    }
+
+    .h2-animation {
+        font-size: 1rem;
+    }
+
     .second-page {
         margin-top: -10px;
         width: 100%;
         height: 400vh;
         position: relative;
+    }
+
+    .h1-offer {
+        transform: translateX(-05%);
     }
 
     .food {
@@ -901,11 +933,89 @@ h3 {
     }
 
     .food button {
-        transform: translate(0, 50%);
+        transform: translate(0, 20%);
     }
 
     #nine {
         display: none;
     }
 
+}
+
+@media (max-width: 414px) {
+    .food {
+        text-align: center;
+        width: 63%;
+        height: 12%;
+        position: relative;
+        transform: translateX(30%);
+    }
+
+    .food button {
+        transform: translate(-5%, -15%);
+    }
+
+    .pepper {
+        transform: translate(-7%, 50%);
+    }
+
+    #fth {
+        margin-left: -13.5px;
+    }
+
+    #six img,
+    #sev img,
+    #eig img,
+    #fst img,
+    #snd img,
+    #trd img,
+    #fth img,
+    #fith img {
+        position: relative;
+        left: -4%;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .food {
+        text-align: center;
+        width: 70%;
+        height: 15%;
+        position: relative;
+        transform: translateX(22%);
+    }
+
+
+    #fth {
+        margin-left: -10%;
+    }
+
+    .food button {
+        transform: translate(-8%, 10%);
+    }
+
+    .pepper {
+        transform: translate(-10%, 50%);
+    }
+
+    .chicken {
+        transform: translate(-10%, 50%);
+    }
+
+    #six img,
+    #sev img,
+    #eig img,
+    #fst img,
+    #snd img,
+    #trd img,
+    #fth img,
+    #fith img {
+        position: relative;
+        left: -07%;
+    }
+
+    #inner-area {
+        font-size: 2.5rem;
+    }
 }
