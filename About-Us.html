@@ -5,7 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon1.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <title>About-Us</title>
 </head>
 
@@ -21,7 +41,8 @@
                 </ul>
             </div>
         </nav>
-        <h1 style="text-align: center; color: white; margin-top: 10%; margin-bottom: 1%; font-size: 3.5rem;">About Our
+        <h1 style="text-align: center; color: white; margin-top: 10%; margin-bottom: 1%; font-size: 3.5rem;"
+            class="about-h1">About Our
             Restaurant</h1>
         <div class="about-talk">
             <p> We are a locally owned and operated restaurant located in the heart of downtown. Our
@@ -36,36 +57,39 @@
     <div class="about">
         <section id="about">
             <h3 class="meet">Meet the Team</h3>
-            <ul>
-                <li>
-                    <div class="aa-div">
+
+            <div id="peeps-carousel" class="carousel slide" data-ride="false">
+                <div class="carousel-inner">
+                    <div class="aa-div carousel-item active container-fluid">
                         <img class="abu" src="Images/Temy Topsy.jpg" alt="A photo of Chef Temy Topsy">
                         <h4 class="aah4">Chef Temy Topsy</h4>
-                        <p>Chef Temy has been in the culinary industry for over 20 years. He has worked in some of
+                        <p style="font-family: 'Montserrat';"> Chef Temy has been in the culinary industry for over 20 years. He has worked in some of
                             the
                             top
-                            restaurants in the city and has a passion for creating innovative and delicious dishes. In
-                            his
-                            free
-                            time, Chef Temy enjoys traveling and trying new flavors from around the world.</p>
+                            restaurants in the city and has a passion for creating innovative and delicious dishes. <span class="remm">In his free
+                            time, Chef Temy enjoys traveling and trying new flavors from around the world.</span></p>
                     </div>
-                    <hr class="hr">
-                </li>
-                <li>
-                    <div class="tt-div">
+                    <div class="tt-div carousel-item container-fluid">
                         <img class="tt-img" src="Images/Temy Topsy1.jpg" alt="A photo of Server Temy Topsy">
                         <h4 class="aah4">Server Aliyah Sanusi</h4>
-                        <p>Aliyah has been working in the restaurant industry for several years and loves interacting
+                        <p class="tt-p" style="font-family: 'Montserrat';">Aliyah has been working in the restaurant industry for several years and loves interacting
                             with
                             guests and
-                            making sure they have a great dining experience. In her free time, she enjoys hiking and
+                            making sure they have a great dining experience. <span class="remm">In her free time, she enjoys hiking and
                             spending time
-                            with her family.</p>
+                            with her family.</span> </p>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <a href="#peeps-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" style="background-color: #212529;"></span>
+                </a>
+
+                <a href="#peeps-carousel" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" style="background-color: #212529;"></span>
+                </a>
+            </div>
             <div class="bottom-cont">
-                <p class="h3" style="color: #212529;">© Temy Topsy 2023 |</p>
+                <p class="h3" style="color: #212529; font-family: 'Montserrat';">© Temy Topsy 2023 |</p>
             </div>
         </section>
     </div>
